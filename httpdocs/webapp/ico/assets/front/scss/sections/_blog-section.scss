@@ -1,0 +1,76 @@
+/*=========================
+** Blog Section
+=========================*/
+.blog-section{
+    padding-top: 107px;
+    padding-bottom: 120px;
+    background-color: $section-bg-color;
+    .single-blog-post{
+        border-radius: 5px;
+        @include box-shadow(0,0,13px,rgba(101,99,99,.70),false);
+        .boxed-btn{
+                padding: 10px 25px;
+                background-color: #F0F3F6;
+                color: $heading-color;
+                font-weight: 600;
+                @include transition($transition);
+                &:hover{
+                    background-color: $base-color;
+                    color: $white;
+                }
+            }
+        .thumb{
+            position: relative;
+            img{
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom: 3px solid $base-color;
+            }
+            .hover{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: $base-color;
+                width: 60px;
+                height: 65px;
+                text-align: center;
+                border-top-right-radius: 10px;
+                span{
+                    font-size: 25px;
+                    font-weight: 600;
+                    color: $white;
+                    margin-bottom: 0;
+                    display: block;
+                    &:last-child{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .content{
+            padding: 30px;
+            background-color: #fff;
+            padding-top: 23px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            h4{
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            .post-meta{
+                padding-bottom: 20px;
+                li{
+                    display: inline-block;
+                    padding-right: 10px;
+                    color: $heading-color;
+                    opacity: .6;
+                    a{
+                        &:hover{
+                            color: $heading-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

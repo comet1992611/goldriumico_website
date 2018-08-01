@@ -1,0 +1,72 @@
+/*=========================
+** Team Section
+=========================*/
+.our-team-area{
+    padding-top: 107px;
+    padding-bottom: 120px;
+    background-color: $section-bg-color-2;
+    .section-title{
+        h2{
+            color: $white;
+        }
+        p{
+            color: $white
+        }
+    }
+    .single-team-member{
+        &:hover{
+            .team_img{
+                .hover{
+                    visibility: visible;
+                    opacity: 1;
+                    @include transform(translateX(-20px))
+                }
+            }
+        }
+        .team-content{
+            background-color: $base-color;
+            text-align: center;
+            padding: 26px 0;
+            padding-bottom: 24px;
+            h4{
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                color: $white;
+            }
+            span{
+                color: $white;
+            }
+        }
+        .team_img{
+            position: relative;
+            .hover{
+                position: absolute;
+                right: 0px;
+                top: 0;
+                visibility: hidden;
+                opacity: 0;
+                @include transition($transition);
+                .social{
+                    padding: 20px 10px;;
+                    background-color: $base-color;
+                    text-align: center;
+                    border-bottom-left-radius: 25px;
+                    border-bottom-right-radius: 25px;
+                    li{
+                        display: block;
+                         padding: 5px 0;
+                         &:hover{
+                             a{
+                                 color: $secondary-color;
+                             }
+                         }
+                        a{
+                            color: $white;
+                           @include transition($transition);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

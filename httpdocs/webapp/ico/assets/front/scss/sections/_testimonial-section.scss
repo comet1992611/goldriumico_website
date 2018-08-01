@@ -1,0 +1,71 @@
+/*==============================
+** Testimonial
+==============================*/
+.testimonial-area{
+    padding-top: 107px;
+    padding-bottom: 167px;
+    .testimonial-carousel{
+        .single-testimonial-carousel {
+            border: 1px solid rgba(101, 99, 99,.1);
+            @include box-shadow(0,0,5px,rgba(101, 99, 99,.1),true);
+            border-radius: 25px;
+            padding: 20px;
+            .author-details {
+                position: relative;
+                &:after{
+                    position: absolute;
+                    right: 20px;
+                    top: 0;
+                    font-size: 40px;
+                    content: "\f10e";
+                    font-family: 'FontAwesome';
+                    color: $secondary-color;
+                    opacity: .2;
+                }
+                .autor-name {
+                    padding-left:  90px;
+                    h4{
+                        text-transform: uppercase;
+                        margin-bottom: 10px;
+                    }
+                    span{
+                        opacity: .6;
+                    }
+                }
+                .thumbnai {
+                    display: inline-block;
+                    position:  absolute;
+                    left:  0;
+                    top: 0;
+                    img{
+                        border-radius: 50%;
+                        border: 2px solid $base-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.testimonial-area .owl-dots div.active {
+  background: $base-color;
+  border-color: $base-color;
+}
+.testimonial-area .owl-dots {
+    text-align: center;
+    margin-top: 25px;
+    position: absolute;
+    left: 50%;
+    bottom:-55px;
+    @include transform(translate(-50%));
+}
+.testimonial-area .owl-dots div {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid $secondary-color;
+    display: inline-block;
+    margin: 2px;
+}
+

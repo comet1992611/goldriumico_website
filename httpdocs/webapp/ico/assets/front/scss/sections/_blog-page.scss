@@ -1,0 +1,115 @@
+/*==============================
+** Blog Page
+==============================*/
+.blog-page-area{
+    padding-top: 120px;
+    padding-bottom: 120px;
+       .single-blog-post{
+        border-radius: 5px;
+        @include box-shadow(0,0,13px,rgba(101,99,99,.70),false);
+        .boxed-btn{
+                padding: 10px 25px;
+                background-color: #F0F3F6;
+                color: $heading-color;
+                font-weight: 600;
+                @include transition($transition);
+                &:hover{
+                    background-color: $base-color;
+                    color: $white;
+                }
+            }
+        .thumb{
+            position: relative;
+            img{
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom: 3px solid $base-color;
+            }
+            .hover{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: $base-color;
+                width: 60px;
+                height: 65px;
+                text-align: center;
+                border-top-right-radius: 10px;
+                span{
+                    font-size: 25px;
+                    font-weight: 600;
+                    color: $white;
+                    margin-bottom: 0;
+                    display: block;
+                    &:last-child{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .content{
+            padding: 30px;
+            background-color: #fff;
+            padding-top: 23px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            h4{
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            .post-meta{
+                padding-bottom: 20px;
+                li{
+                    display: inline-block;
+                    padding-right: 10px;
+                    color: $heading-color;
+                    opacity: .6;
+                    a{
+                        &:hover{
+                            color: $heading-color;
+                        }
+                    }
+                }
+            }
+        }
+        margin-bottom: 30px;
+    }
+    .page-navigation{
+        margin-top: 30px;
+        li{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-weight: 600;
+            border: 1px solid #ddd;
+            margin-left: -5px;
+            cursor: pointer;
+            @include transition($transition);
+            &:first-child{
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+            }
+            &:last-child{
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+            }
+            a{
+                color: $heading-color;
+                @include transition($transition);
+            }
+            &.active{
+                background-color: $base-color;
+                a{
+                    color: $white;
+                }
+            }
+            &:hover{
+                 background-color: $base-color;
+                a{
+                    color: $white;
+                } background-color: $base-color;
+            }
+        }
+    }
+}

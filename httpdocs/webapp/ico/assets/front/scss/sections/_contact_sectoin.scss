@@ -1,0 +1,61 @@
+/*=========================
+** Contact Section
+=========================*/
+.contact-section{
+    position: relative;
+    z-index: 1;
+    padding-top: 120px;
+    padding-bottom: 143px;
+    &:after{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background-color: #f0f3f6;
+        opacity: .30;
+        z-index: -1;
+    }
+    &.contact-bg{
+        background-color: #ddd;
+        background-image: url(../img/contact-bg.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .contact-form-wrapper{
+        border-radius: 15px;
+        h2{
+            margin-bottom: 45px;
+            span{
+                color: $base-color;
+            }
+        }
+        position: relative;
+        padding: 60px;
+        background-color: rgba(240, 243, 246,.7);
+        input{
+            border-radius: 25px;
+            background-color: rgba(240, 243, 246,.7);
+            border: 1px solid $base-color;
+        }
+        textarea{
+            border-radius: 25px;
+            background-color: rgba(240, 243, 246,.7);
+            border: 1px solid $base-color;
+        }
+        input[type=submit]{
+            position: absolute;
+            left: 50%;
+            bottom: -23px;
+            background-color: $base-color;
+            width: 150px;
+            @include transform(translate(-50%));
+            cursor: pointer;
+            &:hover{
+                background-color: $secondary-color;
+                border-color: $secondary-color;
+            }
+        }
+    }
+}

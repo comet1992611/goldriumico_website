@@ -1,0 +1,2 @@
+[Wed Feb 28 19:32:43.393255 2018] [ssl:warn] [pid 22242:tid 140414909720704] AH01909: RSA certificate configured for goldrium.io:443 does NOT include an ID which matches the server name
+[Wed Feb 28 19:32:43.443050 2018] [ssl:warn] [pid 22242:tid 140414909720704] AH01909: RSA certificate configured for goldrium.io:443 does NOT include an ID which matches the server name

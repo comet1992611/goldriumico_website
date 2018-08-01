@@ -1,0 +1,39 @@
+
+/*==============================
+** Main Scss
+==============================*/
+@import "main/_variables.scss";
+@import "main/_mixins.scss";
+@import "main/_global.scss";
+
+/*===============================
+** Normalize/Reset Scss File
+===============================*/
+@import "main/_normalize.scss";
+
+/*=========================
+** Sections Scss File
+=========================*/
+@import "sections/_navbar.scss";
+@import "sections/_header.scss";
+@import "sections/_about.scss";
+@import "sections/_what-we-do.scss";
+@import "sections/_roadmap.scss";
+@import "sections/_team-section.scss";
+@import "sections/_testimonial-section.scss";
+@import "sections/_blog-section.scss";
+@import "sections/_contact_sectoin.scss";
+@import "sections/_faq-section.scss";
+@import "sections/_logo-section.scss";
+@import "sections/_subsciption-section.scss";
+@import "sections/_footer.scss";
+@import "sections/_coin-ticker.scss";
+@import "sections/_breadcumb.scss";
+@import "sections/_preloader.scss";
+@import "sections/_blog-page.scss";
+@import "sections/_sidebar.scss";
+@import "sections/_blog-single.scss";
+
+/*=========================
+** Responsive Scss File
+=========================*/

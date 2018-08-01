@@ -1,0 +1,54 @@
+/*==============================
+** What we do area 
+==============================*/
+.what-we-do{
+    padding-top: 107px;
+    padding-bottom: 88px;
+    background-color: $section-bg-color-2;
+    .section-title{
+        h2{
+            color: $white;
+        }
+        p{
+            color: $white;
+        }
+    }
+    .single-what-we-do{
+        position: relative;
+        margin-bottom: 30px;
+        &:hover{
+            .icon{
+                .svg{
+                    fill: $base-color;
+                    @include transition($transition);
+                }
+            }
+            .content{
+                h4{
+                    color: $base-color;
+                }
+            }
+        }
+        .icon{
+            position: absolute;
+            top: 0;
+            left: 0;
+            .svg{
+                fill: $white;
+            }
+        }
+        .content{
+            padding-left: 90px;
+            h4{
+                    color: $white;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                    @include transition($transition);
+            }
+            p{
+                    color: $white;
+                    margin-bottom: 0;
+            }
+        }
+    }
+}

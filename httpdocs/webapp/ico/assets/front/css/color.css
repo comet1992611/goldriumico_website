@@ -1,0 +1,68 @@
+/*=========================
+** Fanuscoin Color css
+=========================*/
+/*background color*/
+.navbar-area ul li.active,
+.boxed-btn,
+.back-to-top,
+.about-us .about-img .hover,
+.road-map .road-map-wrapper .timeline .item .item-content .content,
+.our-team-area .single-team-member .team-content,
+.our-team-area .single-team-member .team_img .hover .social,
+.testimonial-area .owl-dots div.active,
+.blog-section .single-blog-post .thumb .hover,
+.blog-section .single-blog-post .boxed-btn:hover,
+.navbar-area ul li:hover a,
+.contact-section .contact-form-wrapper input[type=submit],
+.faq-section .accordion-wrapper .panel-title a,
+.faq-section .accordion-wrapper .panel-title a:after,
+.subscription-section .subscription-form button[type=submit],
+.header-area .header-right-content #clockdiv > div {
+    background-color: #f00;
+}
+/*border color*/
+.header-area h1,
+.road-map .road-map-wrapper .timeline .item .item-icon,
+.testimonial-area .testimonial-carousel .single-testimonial-carousel .author-details .thumbnai img,
+.testimonial-area .owl-dots div.active,
+.contact-section .contact-form-wrapper input,
+.contact-section .contact-form-wrapper textarea,
+.subscription-section .subscription-form button[type=submit]{
+  border-color: #f00;
+}
+/*box shadow color*/
+.about-us .about-img .hover{
+  box-shadow: 0 0 5px #f00;
+}
+/* color*/
+.about-us .content h2 span,
+.what-we-do .single-what-we-do:hover .content h4,
+.section-title h2 span,
+.contact-section .contact-form-wrapper h2 span,
+.faq-section .accordion-wrapper .panel-title a.collapsed,
+.faq-section .accordion-wrapper .panel-title a.collapsed:after,
+.footer-section .social-links li a:hover{
+  color: #f00;
+}
+/*svg fill color*/
+.what-we-do .single-what-we-do:hover .icon .svg{
+  fill: #f00;
+}
+/*border right color*/
+.road-map .road-map-wrapper .timeline .row:nth-child(odd) .item .item-content .content:after{
+  border-right-color: #f00;
+}
+/*border left color*/
+.road-map .road-map-wrapper .timeline .row:nth-child(even) .item .item-content .content:after{
+  border-left-color: #f00;
+}
+.road-map .road-map-wrapper .timeline .item .item-icon{
+  box-shadow: 0px 0px 5px 5px #f00;
+}
+/*border left color*/
+.blog-section .single-blog-post .thumb img{
+  border-bottom-color: #f00;
+}   
+.back-to-top{
+  display: none;
+}

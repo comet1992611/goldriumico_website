@@ -1,0 +1,26 @@
+/*=========================
+** Footer 
+=========================*/
+.footer-section{
+    background-color: $section-bg-color-2;
+    padding: 20px 0;
+    .copyright-text{
+        margin-bottom: 0;
+        color: #e6e6e9;
+        text-align: left;
+    }
+    .social-links{
+        li{
+            display: inline-block;
+            padding:0 10px;
+            a{
+                color: $white;
+                @include transition($transition);
+                &:hover{
+                    color: $base-color;
+                    
+                }
+            }
+        }
+    }
+}

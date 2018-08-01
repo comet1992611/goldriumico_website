@@ -1,0 +1,19 @@
+/*=========================
+** Logo Section 
+=========================*/
+.logo-section{
+    padding: 60px 0;
+    background-color: $section-bg-color;
+    .logo-carousel{
+        .single-logo-item{
+            img{
+                @include transition($transition);
+            }
+            &:hover{
+               img{
+                    @include box-shadow(0,0,7px,rgba(0,0,0,.34),false);
+               }
+            }
+        }
+    }
+}
